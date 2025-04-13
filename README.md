@@ -134,7 +134,7 @@ which include
   ```
 - Step 3
   The data stored in S3 will be read by AWS Glue job which will infer schema and create a data catalog which can be made availabel for snowflake.
-![Data Catalog using Glue And Apache Iceberg]
+  ###Data Catalog using Glue And Apache Iceberg
 
 - Step 4
   - Step to create icebergtables and glue tables.
@@ -188,7 +188,7 @@ which include
         .saveAsTable(f"{catalog_nm}.{database_op}.{table_op}")
   ```
 
-![Integrate Snowflake to Glue and S3]
+###Integrate Snowflake to Glue and S3
 - Steps
   1) Create a Snowflake account on aws.
   2) Create an External Volume in SF.
