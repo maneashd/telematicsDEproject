@@ -176,6 +176,9 @@ which include
         .withColumn("file_name", input_file_name())
   ```
   5) Then spark job itself creates an iceberg table in glue and writes the s3 data in iceberg format to the s3_iceberg folders and also the metadat to glue_iceberg table.
+ 
+    ![](https://github.com/maneashd/telematicsDEproject/blob/main/img/s3_icebergdata.png)
+
   ```python
     # Write to Iceberg table with partitioning
     vehicle_raw_df.write \
