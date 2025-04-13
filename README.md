@@ -138,8 +138,9 @@ which include
 
 - Step 4
   - Step to create icebergtables and glue tables.
-  1) ![Create a data base telematics](https://github.com/maneashd/telematicsDEproject/blob/main/img/glu_db.png)
-  2) Open Athena and create a table under the data base pointing to S3 data that was sent by vehilce
+  1) Create a data base telematics
+  ![Create a data base telematics](https://github.com/maneashd/telematicsDEproject/blob/main/img/glu_db.png)
+  3) Open Athena and create a table under the data base pointing to S3 data that was sent by vehilce
      ```sql
         CREATE EXTERNAL TABLE awsdatacatalog.telematics_db.vehicle_schema (
           id STRING,
